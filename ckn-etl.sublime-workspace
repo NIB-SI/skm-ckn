@@ -1,0 +1,1615 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"prim",
+				"primes2igraph"
+			],
+			[
+				"primt",
+				"primes2bnet"
+			],
+			[
+				"in",
+				"interactions"
+			],
+			[
+				"ig",
+				"igraph2interactions"
+			],
+			[
+				"a",
+				"activator_value"
+			],
+			[
+				"node",
+				"node_name_key"
+			],
+			[
+				"i",
+				"igraph"
+			],
+			[
+				"grap",
+				"graphml2interactions"
+			],
+			[
+				"lo",
+				"logging"
+			],
+			[
+				"rea",
+				"read_graphml"
+			],
+			[
+				"lg",
+				"logger"
+			],
+			[
+				"war",
+				"warnings"
+			],
+			[
+				"no",
+				"node_name_key"
+			],
+			[
+				"node_",
+				"node_data"
+			],
+			[
+				"e",
+				"edge"
+			],
+			[
+				"g",
+				"g_dict"
+			],
+			[
+				"ha",
+				"handle"
+			],
+			[
+				"write_",
+				"write_sif"
+			],
+			[
+				"fun",
+				"functions2mindnf"
+			],
+			[
+				"pr",
+				"print"
+			],
+			[
+				"read",
+				"read_sbml"
+			],
+			[
+				"fu",
+				"func"
+			],
+			[
+				"ne",
+				"networkx"
+			],
+			[
+				"Co",
+				"ContinuousMixin"
+			],
+			[
+				"__",
+				"__init__"
+			],
+			[
+				"th",
+				"this_exclude"
+			],
+			[
+				"exl",
+				"exclude"
+			],
+			[
+				"inter",
+				"interactions_to_RegulatoryNetwork"
+			],
+			[
+				"for",
+				"format_classes"
+			],
+			[
+				"read_",
+				"read_graphml"
+			],
+			[
+				"plo",
+				"plot_nodes"
+			],
+			[
+				"noe",
+				"node_name"
+			],
+			[
+				"ed",
+				"edge_events"
+			],
+			[
+				"plot",
+				"plot_boolean_simulation"
+			],
+			[
+				"boolean",
+				"read_boolean_graph"
+			],
+			[
+				"o",
+				"obj"
+			],
+			[
+				"en",
+				"ensure_ndarray"
+			],
+			[
+				"out",
+				"out_format"
+			],
+			[
+				"defa",
+				"default_dict"
+			],
+			[
+				"ma",
+				"_make_reverse_and_complete"
+			],
+			[
+				"para",
+				"parameter"
+			],
+			[
+				"initi",
+				"initial_state"
+			],
+			[
+				"other_node",
+				"other_node_state"
+			],
+			[
+				"legen",
+				"legend_labels"
+			],
+			[
+				"fig",
+				"figsize"
+			],
+			[
+				"c",
+				"custom_cycler"
+			],
+			[
+				"leg",
+				"legend_labels"
+			],
+			[
+				"this",
+				"this_y"
+			],
+			[
+				"num",
+				"num_plots"
+			],
+			[
+				"n",
+				"normalisedhill"
+			],
+			[
+				"return",
+				"return"
+			],
+			[
+				"pa",
+				"parents"
+			],
+			[
+				"state",
+				"state"
+			],
+			[
+				"initial",
+				"initial_values"
+			],
+			[
+				"tran",
+				"transform_function"
+			],
+			[
+				"k",
+				"kwargs"
+			],
+			[
+				"Bool",
+				"BooleanGraph"
+			],
+			[
+				"events",
+				"events_d"
+			],
+			[
+				"perturn",
+				"perturb_end"
+			],
+			[
+				"eve",
+				"event_t"
+			],
+			[
+				"event",
+				"events_d"
+			],
+			[
+				"bool",
+				"boolean_graph"
+			],
+			[
+				"data",
+				"data_format"
+			],
+			[
+				"gr",
+				"graph"
+			],
+			[
+				"f",
+				"f"
+			],
+			[
+				"combined",
+				"combined_y"
+			],
+			[
+				"ou",
+				"outfile"
+			],
+			[
+				"t",
+				"try\tTry/Except"
+			],
+			[
+				"Fl",
+				"False"
+			],
+			[
+				"is",
+				"isinstance"
+			],
+			[
+				"iniital",
+				"initial_state"
+			],
+			[
+				"Boo",
+				"BoolCube"
+			],
+			[
+				"graph",
+				"graphml"
+			],
+			[
+				"free",
+				"free_variables"
+			],
+			[
+				"bo",
+				"bool_state_array"
+			],
+			[
+				"_s",
+				"_squad_update_func"
+			],
+			[
+				"get_",
+				"_get_node_functions"
+			],
+			[
+				"re",
+				"reverser"
+			],
+			[
+				"sub",
+				"sub_d"
+			],
+			[
+				"p",
+				"parameter"
+			],
+			[
+				"def",
+				"default"
+			],
+			[
+				"ode",
+				"ode_system"
+			],
+			[
+				"orig",
+				"orig_d"
+			],
+			[
+				"P",
+				"PyBoolNet"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "ETL/reference_files/.gitignore",
+			"settings":
+			{
+				"buffer_size": 24,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					8,
+					1,
+					"insert",
+					{
+						"characters": "!.giti"
+					},
+					"BgAAAA0AAAAAAAAADgAAAAAAAAAAAAAADgAAAAAAAAAPAAAAAAAAAAAAAAAPAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAAAEQAAAAAAAAAAAAAAEQAAAAAAAAASAAAAAAAAAAAAAAASAAAAAAAAABMAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAADQAAAAAAAAANAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					9,
+					1,
+					"insert",
+					{
+						"characters": "gnore"
+					},
+					"BQAAABMAAAAAAAAAFAAAAAAAAAAAAAAAFAAAAAAAAAAVAAAAAAAAAAAAAAAVAAAAAAAAABYAAAAAAAAAAAAAABYAAAAAAAAAFwAAAAAAAAAAAAAAFwAAAAAAAAAYAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAEwAAAAAAAAATAAAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "ETL/gmm_annot/raw_data/.gitignore",
+			"settings":
+			{
+				"buffer_size": 24,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					8,
+					1,
+					"paste",
+					null,
+					"AQAAAA0AAAAAAAAAGAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAADQAAAAAAAAANAAAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "ETL/go_annot/raw_data/.gitignore",
+			"settings":
+			{
+				"buffer_size": 24,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					3,
+					1,
+					"paste",
+					null,
+					"AQAAAA0AAAAAAAAAGAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAADQAAAAAAAAANAAAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "ETL/huang2022_mirTarBase/raw_data/.gitignore",
+			"redo_stack":
+			[
+				[
+					8,
+					1,
+					"paste",
+					null,
+					"AQAAABkAAAAAAAAAGQAAAAAAAAALAAAAIS5naXRpZ25vcmU",
+					"AQAAAAAAAAABAAAAJAAAAAAAAAAkAAAAAAAAAAAAAAAAAPC/"
+				]
+			],
+			"settings":
+			{
+				"buffer_size": 25,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					3,
+					1,
+					"paste",
+					null,
+					"AQAAAA0AAAAAAAAAGAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAADQAAAAAAAAANAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					7,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAABgAAAAAAAAAGQAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAGAAAAAAAAAAYAAAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "ETL/lichtenberg2009_AGRIS-AtcisDB/raw_data/.gitignore",
+			"redo_stack":
+			[
+				[
+					6,
+					1,
+					"paste",
+					null,
+					"AQAAABkAAAAAAAAAGQAAAAAAAAALAAAAIS5naXRpZ25vcmU",
+					"AQAAAAAAAAABAAAAJAAAAAAAAAAkAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					5,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAABgAAAAAAAAAGAAAAAAAAAABAAAACg",
+					"AQAAAAAAAAABAAAAGQAAAAAAAAAZAAAAAAAAAAAAAAAAAPC/"
+				]
+			],
+			"settings":
+			{
+				"buffer_size": 24,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					3,
+					1,
+					"paste",
+					null,
+					"AQAAAA0AAAAAAAAAGAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAADQAAAAAAAAANAAAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "ETL/palaniswamy2006_AGRIS-AtRegNet/raw_data/.gitignore",
+			"settings":
+			{
+				"buffer_size": 24,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					3,
+					1,
+					"paste",
+					null,
+					"AQAAAA0AAAAAAAAAGAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAADQAAAAAAAAANAAAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "ETL/palaniswamy2006_AGRIS-AtTFDB/raw_data/.gitignore",
+			"settings":
+			{
+				"buffer_size": 25,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					3,
+					1,
+					"paste",
+					null,
+					"AQAAAA0AAAAAAAAAGAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAADQAAAAAAAAANAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					5,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAABgAAAAAAAAAGQAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAGAAAAAAAAAAYAAAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "ETL/utils/README.md",
+			"settings":
+			{
+				"buffer_size": 0,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					1,
+					1,
+					"insert",
+					{
+						"characters": "RAD"
+					},
+					"AwAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAACAAAAAAAAAAAAAAACAAAAAAAAAAMAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					2,
+					3,
+					"left_delete",
+					null,
+					"AwAAAAIAAAAAAAAAAgAAAAAAAAABAAAARAEAAAAAAAAAAQAAAAAAAAABAAAAQQAAAAAAAAAAAAAAAAAAAAABAAAAUg",
+					"AQAAAAAAAAABAAAAAwAAAAAAAAADAAAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "ETL/yi2015_PNRD/raw_data/.gitignore",
+			"settings":
+			{
+				"buffer_size": 24,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					5,
+					1,
+					"insert",
+					{
+						"characters": "!.git"
+					},
+					"BQAAAA0AAAAAAAAADgAAAAAAAAAAAAAADgAAAAAAAAAPAAAAAAAAAAAAAAAPAAAAAAAAABAAAAAAAAAAAAAAABAAAAAAAAAAEQAAAAAAAAAAAAAAEQAAAAAAAAASAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAADQAAAAAAAAANAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					6,
+					1,
+					"insert",
+					{
+						"characters": "ignor"
+					},
+					"BQAAABIAAAAAAAAAEwAAAAAAAAAAAAAAEwAAAAAAAAAUAAAAAAAAAAAAAAAUAAAAAAAAABUAAAAAAAAAAAAAABUAAAAAAAAAFgAAAAAAAAAAAAAAFgAAAAAAAAAXAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAEgAAAAAAAAASAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					7,
+					1,
+					"insert",
+					{
+						"characters": "e"
+					},
+					"AQAAABcAAAAAAAAAGAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAFwAAAAAAAAAXAAAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"contents": "source_name\", \n\"protein\", \n\"gene id\", \n\"protein family\", \n\"protein source\", \n\"protein affinity tag\", \n\"expression system\", \n\"dna source\", \n\"replicate\", \n\"subset\"",
+			"settings":
+			{
+				"buffer_size": 161,
+				"line_ending": "Unix",
+				"name": "source_name\","
+			},
+			"undo_stack":
+			[
+				[
+					2,
+					1,
+					"",
+					null,
+					"AQAAAAAAAAAAAAAATgAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					6,
+					1,
+					"",
+					null,
+					"AQAAAE4AAAAAAAAAnAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAATgAAAAAAAABOAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					15,
+					1,
+					"left_delete",
+					null,
+					"AQAAAAAAAAAAAAAAAAAAAAAAAACcAAAAJ0dTTTE5MjU4MTNfREFQU2VxLXpmR1JGX3RudC1BVDNHNDI4NjBfY29sX2EtY2hyMS01X0dFTV9ldmVudHMubmFycm93UGVhay5neicKJ0dTTTE5MjU4MTNfREFQU2VxLXpmR1JGX3RudC1BVDNHNDI4NjBfY29sX2EtY2hyMS01X0dFTV9ldmVudHMubmFycm93UGVhay5neicK",
+					"AQAAAAAAAAABAAAAAAAAAAAAAACcAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					17,
+					1,
+					"",
+					null,
+					"AQAAAAAAAAAAAAAAfAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					18,
+					1,
+					"",
+					null,
+					"CQAAAHUAAAAAAAAAegAAAAAAAAABAAAACmsAAAAAAAAAcAAAAAAAAAABAAAACmAAAAAAAAAAZQAAAAAAAAABAAAACk4AAAAAAAAAUwAAAAAAAAABAAAACjkAAAAAAAAAPgAAAAAAAAABAAAACioAAAAAAAAALwAAAAAAAAABAAAAChsAAAAAAAAAIAAAAAAAAAABAAAAChMAAAAAAAAAGAAAAAAAAAABAAAACgsAAAAAAAAAEAAAAAAAAAABAAAACg",
+					"AQAAAAAAAAABAAAAfAAAAAAAAAB8AAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					19,
+					1,
+					"insert",
+					{
+						"characters": "\""
+					},
+					"AQAAAKAAAAAAAAAAoQAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAoAAAAAAAAACgAAAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "ETL/skoufos2023_TarBase/raw_data/.gitignore",
+			"settings":
+			{
+				"buffer_size": 25,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					3,
+					1,
+					"paste",
+					null,
+					"AQAAAA0AAAAAAAAAGAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAADQAAAAAAAAANAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					5,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAABgAAAAAAAAAGQAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAGAAAAAAAAAAYAAAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "ETL/szklarczyk_STRING/README.md",
+			"settings":
+			{
+				"buffer_size": 625,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					4,
+					1,
+					"insert",
+					{
+						"characters": "\n"
+					},
+					"AQAAAEsAAAAAAAAATAAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAASwAAAAAAAABLAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					7,
+					1,
+					"",
+					null,
+					"AQAAAEsAAAAAAAAAHwIAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAASwAAAAAAAABLAAAAAAAAAAAAAAAAAAAA"
+				]
+			]
+		},
+		{
+			"file": "ETL/szklarczyk_STRING/raw_data/.gitignore",
+			"settings":
+			{
+				"buffer_size": 25,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					3,
+					1,
+					"paste",
+					null,
+					"AQAAAA0AAAAAAAAAGQAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAADQAAAAAAAAANAAAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "ETL/template/raw_data/.gitignore",
+			"settings":
+			{
+				"buffer_size": 25,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					3,
+					1,
+					"paste",
+					null,
+					"AQAAAA0AAAAAAAAAGQAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAADQAAAAAAAAANAAAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		},
+		{
+			"file": "ETL/tian2020_PlantRegMap/raw_data/.gitignore",
+			"settings":
+			{
+				"buffer_size": 37,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			},
+			"undo_stack":
+			[
+				[
+					3,
+					1,
+					"paste",
+					null,
+					"AQAAAA0AAAAAAAAAGQAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAADQAAAAAAAAANAAAAAAAAAAAAAAAAAPC/"
+				],
+				[
+					8,
+					1,
+					"paste",
+					null,
+					"AQAAABkAAAAAAAAAJQAAAAAAAAAAAAAA",
+					"AQAAAAAAAAABAAAAGQAAAAAAAAAZAAAAAAAAAAAAAAAAAPC/"
+				]
+			]
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			],
+			[
+				"packa",
+				"Package Control: Install Package"
+			],
+			[
+				"pyy",
+				"PyYapf: Format Document"
+			],
+			[
+				"package",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: rst",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 829.0,
+		"history":
+		[
+			";",
+			"help"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/cbleker/research/NIB/skm/skm-ckn/ETL",
+		"/home/cbleker/research/NIB/skm/skm-ckn/ETL/gmm_annot",
+		"/home/cbleker/research/NIB/skm/skm-ckn/ETL/gmm_annot/raw_data",
+		"/home/cbleker/research/NIB/skm/skm-ckn/ETL/go_annot",
+		"/home/cbleker/research/NIB/skm/skm-ckn/ETL/go_annot/raw_data",
+		"/home/cbleker/research/NIB/skm/skm-ckn/ETL/huang2022_mirTarBase",
+		"/home/cbleker/research/NIB/skm/skm-ckn/ETL/huang2022_mirTarBase/raw_data",
+		"/home/cbleker/research/NIB/skm/skm-ckn/ETL/lichtenberg2009_AGRIS-AtcisDB",
+		"/home/cbleker/research/NIB/skm/skm-ckn/ETL/lichtenberg2009_AGRIS-AtcisDB/raw_data",
+		"/home/cbleker/research/NIB/skm/skm-ckn/ETL/omalley2016_dapseq",
+		"/home/cbleker/research/NIB/skm/skm-ckn/ETL/omalley2016_dapseq/raw_data",
+		"/home/cbleker/research/NIB/skm/skm-ckn/ETL/palaniswamy2006_AGRIS-AtRegNet",
+		"/home/cbleker/research/NIB/skm/skm-ckn/ETL/palaniswamy2006_AGRIS-AtRegNet/raw_data",
+		"/home/cbleker/research/NIB/skm/skm-ckn/ETL/palaniswamy2006_AGRIS-AtTFDB",
+		"/home/cbleker/research/NIB/skm/skm-ckn/ETL/palaniswamy2006_AGRIS-AtTFDB/raw_data",
+		"/home/cbleker/research/NIB/skm/skm-ckn/ETL/po_annot",
+		"/home/cbleker/research/NIB/skm/skm-ckn/ETL/reference_files",
+		"/home/cbleker/research/NIB/skm/skm-ckn/ETL/tian2020_PlantRegMap",
+		"/home/cbleker/research/NIB/skm/skm-ckn/ETL/tian2020_PlantRegMap/raw_data",
+		"/home/cbleker/research/NIB/skm/skm-ckn/ETL/utils",
+		"/home/cbleker/research/NIB/skm/skm-ckn/ETL/yi2015_PNRD",
+		"/home/cbleker/research/NIB/skm/skm-ckn/ETL/yi2015_PNRD/raw_data"
+	],
+	"file_history":
+	[
+		"/home/cbleker/research/NIB/squad/BoolDoG/booldog/io/bnet_to_sif.py",
+		"/home/cbleker/research/NIB/squad/BoolDoG/booldog/utils/misc.py",
+		"/home/cbleker/research/NIB/squad/BoolDoG/booldog/io/write.py",
+		"/home/cbleker/research/NIB/squad/BoolDoG/booldog/io/networkx.py",
+		"/home/cbleker/research/NIB/squad/BoolDoG/booldog/io/__init__.py",
+		"/home/cbleker/research/NIB/squad/BoolDoG/booldog/io/read.py",
+		"/home/cbleker/research/NIB/skm/skm-ckn/ETL/skoufos2023_TarBase/README.md",
+		"/home/cbleker/research/NIB/skm/skm-ckn/ETL/tian2020_PlantRegMap/README.md",
+		"/home/cbleker/research/NIB/skm/skm-ckn/ETL/huang2022_mirtarbase/README.md",
+		"/home/cbleker/research/NIB/squad/BoolDoG/booldog/io/bioModels.py",
+		"/home/cbleker/research/NIB/squad/BoolDoG/booldog/io/sbml.py",
+		"/home/cbleker/research/NIB/squad/BoolDoG/dev/dev-sbml-qual/BIOMD0000000562_url.xml",
+		"/home/cbleker/research/NIB/squad/BoolDoG/booldog/__init__.py",
+		"/home/cbleker/research/NIB/squad/BoolDoG/setup.py",
+		"/home/cbleker/research/NIB/squad/BoolDoG/tests/data/example.xml",
+		"/home/cbleker/research/NIB/squad/BoolDoG/tests/data/example.primes.json",
+		"/home/cbleker/research/NIB/squad/BoolDoG/tests/data/example.sif",
+		"/home/cbleker/research/NIB/squad/BoolDoG/tests/data/example.bnet",
+		"/home/cbleker/research/NIB/squad/BoolDoG/tests/data/example.graphml",
+		"/home/cbleker/research/NIB/squad/BoolDoG/tests/test_io.py",
+		"/home/cbleker/research/NIB/squad/BoolDoG/booldog/io/bnet.py",
+		"/home/cbleker/research/NIB/skm/skm-ckn/ETL/yi2015_pnrd/README.md",
+		"/home/cbleker/research/NIB/squad/BoolDoG/booldog/io/graphml.py",
+		"/home/cbleker/research/NIB/squad/BoolDoG/booldog/io/squad.py",
+		"/home/cbleker/research/NIB/squad/BoolDoG/booldog/io/igraph.py",
+		"/home/cbleker/research/NIB/squad/BoolDoG/booldog/utils/boolean_normal_forms.py",
+		"/home/cbleker/research/NIB/armor/test/rna-seq/README.md",
+		"/home/cbleker/research/NIB/squad/BoolDoG/booldog/booldog.py",
+		"/home/cbleker/research/NIB/squad/BoolDoG/tests/test_utils.py",
+		"/home/cbleker/research/NIB/squad/BoolDoG/tests/data/example.yEd.graphml",
+		"/home/cbleker/research/NIB/squad/BoolDoG/tests/data/Athaliana.graphml",
+		"/home/cbleker/research/NIB/squad/BoolDoG/tests/data/primes.json",
+		"/home/cbleker/research/NIB/squad/BoolDoG/booldog/boolean_graph.py",
+		"/home/cbleker/research/NIB/squad/BoolDoG/dev/dev-sbml-qual/example.xml",
+		"/home/cbleker/research/NIB/squad/BoolDoG/booldog/bool_graph.py",
+		"/home/cbleker/research/NIB/squad/BoolDoG/booldog/ode.py",
+		"/home/cbleker/research/NIB/squad/BoolDoG/booldog/io/sbmlqual.py",
+		"/home/cbleker/research/NIB/squad/BoolDoG/Notes.md",
+		"/home/cbleker/research/NIB/squad/BoolDoG/booldog/utils/__init__.py",
+		"/home/cbleker/research/NIB/squad/BoolDoG/examples/ath_example.py",
+		"/home/cbleker/research/NIB/squad/BoolDoG/booldog/semi_quantitative.py",
+		"/home/cbleker/research/NIB/squad/BoolDoG/booldog/simulation_result/boolean.py",
+		"/home/cbleker/research/NIB/squad/BoolDoG/CONTRIBUTE.md",
+		"/home/cbleker/research/NIB/squad/BoolDoG/.style.yapf",
+		"/home/cbleker/research/NIB/squad/BoolDoG/booldog/utils/utils.py",
+		"/home/cbleker/research/NIB/squad/BoolDoG/booldog/base.py",
+		"/home/cbleker/research/NIB/squad/BoolDoG/booldog/simulation_result/continous.py",
+		"/home/cbleker/research/NIB/squad/BoolDoG/dev/swig/cIAA_func.c",
+		"/home/cbleker/research/NIB/squad/BoolDoG/booldog/swig/c_template.c",
+		"/home/cbleker/research/NIB/squad/BoolDoG/booldog/swig/c_template.h",
+		"/home/cbleker/research/NIB/squad/BoolDoG/dev/swig1/cIAA_func.i",
+		"/home/cbleker/research/NIB/squad/BoolDoG/booldog/swig/interface.i",
+		"/home/cbleker/research/NIB/squad/BoolDoG/booldog/swig/compile_swig.py",
+		"/home/cbleker/research/NIB/squad/BoolDoG/dev/time.py",
+		"/home/cbleker/research/NIB/squad/BoolDoG/booldog/cli.py",
+		"/home/cbleker/research/NIB/squad/BoolDoG/TODO.md",
+		"/home/cbleker/research/NIB/squad/BoolDoG/docs/source/formats.rst",
+		"/home/cbleker/Desktop/pgcgap-1.0.35-pl5321hdfd78af_0/info/recipe/meta.yaml",
+		"/home/cbleker/research/NIB/squad/BoolDoG/docs/source/conf.py",
+		"/home/cbleker/research/NIB/squad/BoolDoG/docs/source/index.rst",
+		"/home/cbleker/research/NIB/squad/BoolDoG/docs/source/api/booldog.io.rst",
+		"/home/cbleker/research/NIB/squad/BoolDoG/docs/source/api/booldog.rst",
+		"/home/cbleker/research/NIB/squad/BoolDoG/test.out",
+		"/home/cbleker/research/NIB/squad/BoolDoG/IAA-cyt-m",
+		"/home/cbleker/research/NIB/squad/BoolDoG/test_import.py",
+		"/home/cbleker/research/NIB/squad/BoolDoG/pss-boolnet-restricted-06.04.2022.bnet",
+		"/home/cbleker/research/NIB/squad/BoolDoG/test1.out",
+		"/home/cbleker/research/NIB/squad/BoolDoG/RBOH-cyt-p-a",
+		"/home/cbleker/research/NIB/squad/BoolDoG/booldog/io/io.py",
+		"/home/cbleker/research/NIB/squad/BoolDoG/.gitignore",
+		"/home/cbleker/research/NIB/squad/BoolDoG/booldog/utils/io.py",
+		"/home/cbleker/research/NIB/squad/BoolDoG/booldog/utils/bnet_to_sif.py",
+		"/home/cbleker/research/NIB/squad/BoolDoG/docs/source/file_formats.rst",
+		"/home/cbleker/research/NIB/squad/BoolDoG/docs/source/installation.rst",
+		"/home/cbleker/research/NIB/squad/BoolDoG/README.md",
+		"/home/cbleker/research/NIB/squad/BoolDoG/booldog/plotting.py",
+		"/home/cbleker/research/NIB/squad/BoolDoG/booldog/simulation_result/__init__.py",
+		"/home/cbleker/research/NIB/squad/BoolDoG/booldog/simulation_results.py",
+		"/home/cbleker/research/NIB/squad/BoolDoG/docs/requirements-no-deps.txt",
+		"/home/cbleker/research/NIB/squad/BoolDoG/docs/gh-pages/_sources/installation.rst.txt",
+		"/home/cbleker/research/NIB/squad/BoolDoG/docs/requirements.txt",
+		"/home/cbleker/research/NIB/squad/BoolDoG/booldog/utils/QMC_bc.py",
+		"/home/cbleker/research/NIB/squad/BoolDoG/examples/zagorscak-potatostress.png",
+		"/home/cbleker/research/NIB/squad/BoolDoG/booldog/utils/QMC.py",
+		"/home/cbleker/research/NIB/squad/BoolDoG/docs/README.md",
+		"/home/cbleker/research/NIB/squad/BoolDoG/docs/source/bioschemas.html",
+		"/home/cbleker/research/NIB/squad/BoolDoG/examples/networks/README.md",
+		"/home/cbleker/research/NIB/squad/BoolDoG/docs/source/example.rst",
+		"/home/cbleker/research/NIB/squad/BoolDoG/booldog/utils/stylesheet.mplstyle",
+		"/home/cbleker/research/NIB/squad/BoolDoG/booldog/utils/plot_utils.py",
+		"/home/cbleker/research/NIB/squad/BoolDoG/examples/delayfunc_1b.bnet",
+		"/home/cbleker/research/NIB/squad/BoolDoG/examples/delayfunc_b.png",
+		"/home/cbleker/research/NIB/squad/BoolDoG/dev-notes.txt",
+		"/home/cbleker/research/NIB/squad/BoolDoG/booldog/io.py",
+		"/home/cbleker/research/NIB/squad/BoolDoG/booldog/QMC.py",
+		"/home/cbleker/research/NIB/squad/BoolDoG/test.py",
+		"/home/cbleker/research/NIB/squad/BoolDoG/time.py",
+		"/home/cbleker/research/NIB/squad/BoolDoG/docs/build/html/_sources/index.rst.txt",
+		"/home/cbleker/research/NIB/squad/BoolDoG/docs/build/html/_sources/installation.rst.txt",
+		"/home/cbleker/research/NIB/squad/booldog/docs/source/installation.rst",
+		"/home/cbleker/research/NIB/squad/booldog/squad_reboot/base.py",
+		"/home/cbleker/research/NIB/squad/booldog/squad_reboot/utils.py",
+		"/home/cbleker/research/NIB/squad/squad-reboot/squad_reboot/__init__.py",
+		"/home/cbleker/research/NIB/squad/squad-reboot/README.md",
+		"/home/cbleker/research/NIB/squad/squad-reboot/squad_reboot/bool_graph.py",
+		"/home/cbleker/research/NIB/squad/squad-reboot/squad_reboot/ode.py",
+		"/home/cbleker/research/NIB/squad/squad-reboot/squad_reboot/io.py",
+		"/home/cbleker/research/NIB/squad/squad-reboot/squad_reboot/QMC.py",
+		"/home/cbleker/research/NIB/squad/squad-reboot/.gitignore",
+		"/home/cbleker/research/NIB/squad/squad-reboot/docs/source/index.rst",
+		"/home/cbleker/research/NIB/squad/squad-reboot/setup.py",
+		"/home/cbleker/research/NIB/squad/squad-reboot/requirements.txt",
+		"/home/cbleker/research/NIB/squad/squad-reboot/dev-notes.txt",
+		"/home/cbleker/research/NIB/squad/squad-reboot/examples/networks/erk-cascade-brietz.bnet",
+		"/home/cbleker/research/NIB/squad/squad-reboot/examples/networks/erk-cascade-breitenbach.net",
+		"/home/cbleker/research/NIB/squad/squad-reboot/examples/networks/cellcycle.bnet",
+		"/home/cbleker/research/NIB/squad/squad-reboot/examples/test-notebook.ipynb",
+		"/home/cbleker/research/NIB/squad/squad-reboot/examples/networks/README.md",
+		"/home/cbleker/research/NIB/squad/squad-reboot/original-squad/squad2-2/samples/THelper_network.net",
+		"/home/cbleker/.cache/.fr-FINNmb/XML/DESCRIPTION",
+		"/home/cbleker/.cache/.fr-TqE0yc/XML/README",
+		"/home/cbleker/Downloads/README.md",
+		"/home/cbleker/Downloads/CHANGELOG.md",
+		"/home/cbleker/research/NIB/ADAPT/squad/squad-reboot/squad_reboot/ode.py",
+		"/home/cbleker/research/NIB/ADAPT/squad/squad-reboot/squad_reboot/io.py",
+		"/home/cbleker/research/NIB/ADAPT/squad/squad-reboot/squad_reboot/utils.py",
+		"/home/cbleker/research/NIB/ADAPT/squad/squad-reboot/dev/Codes_optimal_pharmacological_intervention/main_comp_therapies.m",
+		"/home/cbleker/.cache/.fr-TKhUSU/Codes_optimal_pharmacological_intervention/Readme.txt"
+	],
+	"find":
+	{
+		"height": 32.0
+	},
+	"find_in_files":
+	{
+		"height": 206.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"\\n",
+			"gitignore"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"\", \\n\""
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": false
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "ETL/reference_files/.gitignore",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 24,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								24,
+								13
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Git Formats/Git Ignore.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 14,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "ETL/gmm_annot/raw_data/.gitignore",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 24,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								24,
+								24
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Git Formats/Git Ignore.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 13,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "ETL/go_annot/raw_data/.gitignore",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 24,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								24,
+								24
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Git Formats/Git Ignore.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 12,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "ETL/huang2022_mirTarBase/raw_data/.gitignore",
+					"selected": true,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 25,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								12,
+								12
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Git Formats/Git Ignore.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "ETL/lichtenberg2009_AGRIS-AtcisDB/raw_data/.gitignore",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 24,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								24,
+								24
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Git Formats/Git Ignore.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 11,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "ETL/palaniswamy2006_AGRIS-AtRegNet/raw_data/.gitignore",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 24,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								24,
+								24
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Git Formats/Git Ignore.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 10,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "ETL/palaniswamy2006_AGRIS-AtTFDB/raw_data/.gitignore",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 25,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								25,
+								25
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Git Formats/Git Ignore.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "ETL/utils/README.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "ETL/yi2015_PNRD/raw_data/.gitignore",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 24,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								24,
+								24
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Git Formats/Git Ignore.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 161,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								161,
+								161
+							]
+						],
+						"settings":
+						{
+							"auto_name": "source_name\",",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "ETL/skoufos2023_TarBase/raw_data/.gitignore",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 25,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								25,
+								25
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Git Formats/Git Ignore.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "ETL/szklarczyk_STRING/README.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 625,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								543,
+								543
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 9,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "ETL/szklarczyk_STRING/raw_data/.gitignore",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 25,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								25,
+								25
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Git Formats/Git Ignore.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 8,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "ETL/template/raw_data/.gitignore",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 25,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								25,
+								25
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Git Formats/Git Ignore.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"stack_multiselect": false,
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "ETL/tian2020_PlantRegMap/raw_data/.gitignore",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 37,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								37,
+								37
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Git Formats/Git Ignore.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"stack_multiselect": false,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 62.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.SublimeLinter":
+	{
+		"height": 0.0
+	},
+	"output.SublimeLinter Messages":
+	{
+		"height": 190.0
+	},
+	"output.exec":
+	{
+		"height": 429.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/Python/Python.sublime-build",
+	"project": "ckn-etl.sublime-project",
+	"replace":
+	{
+		"height": 90.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 625.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 475.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 407.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

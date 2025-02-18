@@ -1,0 +1,5 @@
+*.bed
+*.tsv
+
+!sample_info.tsv
+!sample_metadata.tsv
