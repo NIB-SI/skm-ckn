@@ -16,9 +16,12 @@ The PSS part (edges with skm:rx sources, rank 0; see update_pss):
   PSS annotation;
 - reactions no longer in the PSS gene network (deprecated, or now curated for other species only) are removed,
   as are those whose v2 edges PSS no longer has (e.g. complexes it no longer makes) or has with the opposite
-  sign (opposite_signs): their skm:rx source is dropped, and an edge left without sources goes;
-- the reactions the CKN does not have (new, and those just removed for changed edges) are added from the gene
-  network (PSS_TYPES), merged into an existing edge between the same nodes (merge_pss_edge);
+  sign (opposite_signs), and those on a v2 edge together with a reaction of another type (mixed_types): their
+  skm:rx source is dropped, and an edge left without sources goes;
+- the reactions the CKN does not have (new, and those just removed) are added from the gene network
+  (PSS_TYPES): one edge per interaction type, so two nodes can have two edges (e.g. ABI4 binds RGL2, and
+  activates its transcription); merged into an existing edge between the same nodes of the same type, a CKN
+  binding edge for a PTM, a CKN small RNA interaction for a repression (merge_pss_edge);
 - the other v2 PSS edges are kept as they are (the 2023 conversion);
 - an edge left with other sources only gets their rank (source_rank);
 - nodes left without edges are removed.
@@ -221,42 +224,58 @@ def set_effect(edge, effect):
     edge['interaction'] = INFLUENCE.get(effect, 'unknown-influence')
 
 
-def merge_pss_edge(edge, new, log):
-    ''' A PSS edge (new) between the nodes of an existing CKN edge: its source is added and the rank set to 0.
-    Type and effect as in ETL/pss/scripts/pss2ckn_20260720.ipynb (cells 39, 40):
-    - the same type: the effects combined (act and inh: act/inh);
-    - CKN binding and a functional PSS type, or CKN rank 4: PSS's type and effect;
-    - PTM on both sides: PSS's effect where CKN's is neither act nor inh;
-    - PSS binding and a functional CKN type, CKN small RNA interactions and PSS repression: CKN's kept;
-    - anything else: CKN's kept, listed as a conflict. '''
-    old = dict(edge)
-    if edge['type'] == new['type']:
+def same_direction(edge, new):
+    ''' Two edges between the same nodes that can be one: not both directed, or both the same way '''
+    return not (edge['directed'] and new['directed']) or (edge['source'], edge['target']) == (new['source'],
+                                                                                              new['target'])
+
+
+def merge_target(edges, candidates, new):
+    ''' The existing edge a PSS edge (new) is merged into, and the rule; (None, None): a separate edge.
+    - the same type: one interaction;
+    - a CKN binding edge and a PSS PTM: the binding is the physical side of the modification;
+    - a CKN small RNA interaction and a PSS repression: a miRNA repressing its target, described twice;
+    - any other type: another interaction between the same nodes (e.g. a protein-protein interaction and
+      transcription factor regulation), its own edge. '''
+    compatible = [i for i in candidates if same_direction(edges[i], new)]
+    for rule, wanted in (('same type', new['type']),
+                         ('binding -> PTM', 'binding' if new['type'] == PTM else None),
+                         ('small RNA + repression',
+                          'small RNA interactions' if new['reaction_type'] == REPRESSION else None)):
+        for i in compatible:
+            if wanted and edges[i]['type'] == wanted:
+                return i, rule
+    return None, None
+
+
+def merge_pss_edge(edge, new, rule):
+    ''' A PSS edge (new) merged into an existing edge (merge_target): its source is added and the rank set to 0;
+    the same type: the effects combined (act and inh: act/inh; a PTM's unk: PSS's); binding -> PTM: PSS's
+    type, direction and effect; small RNA + repression: CKN's type and effect kept '''
+    if rule == 'same type':
         if edge['type'] == PTM and edge['effect'] not in ('act', 'inh'):
             set_effect(edge, new['effect'])
         else:
             set_effect(edge, combined_effect(edge['effect'], new['effect']))
-    elif (edge['type'] == 'binding' and new['type'] != 'binding') or edge['rank'] == '4':
+    elif rule == 'binding -> PTM':
         edge['type'], edge['isTFregulation'] = new['type'], new['isTFregulation']
+        edge['source'], edge['target'], edge['directed'] = new['source'], new['target'], new['directed']
         set_effect(edge, new['effect'])
-        if edge['rank'] == '4':
-            edge['directed'] = new['directed']
-    elif not (new['type'] == 'binding' or
-              (edge['type'] == 'small RNA interactions' and new['reaction_type'] == REPRESSION)):
-        log['conflicts'].append((old, new))
     edge['interactionSources'] = '|'.join(sources(edge) + [new['interactionSources']])
     edge['rank'] = '0'
 
 
 def pss_edges(rows, wanted):
-    ''' The gene network rows of the wanted reactions as CKN edges: one per node pair and direction (undirected:
-    one per pair), with the reactions of the pair joined '''
+    ''' The gene network rows of the wanted reactions as CKN edges: one per node pair, direction (undirected:
+    one per pair) and CKN type, with the reactions joined '''
     edges = {}
     for r in rows:
         if r['reaction_id'] not in wanted:
             continue
         a, b = node_id(r['source']), node_id(r['target'])
         directed = r['directed'] == 'True'
-        key = (a, b, True) if directed else (*sorted((a, b)), False)
+        ckn_type = PSS_TYPES.get(r['reaction_type'], 'other')
+        key = ((a, b, True) if directed else (*sorted((a, b)), False)) + (ckn_type,)
         effect = EFFECTS.get(r['interaction'], 'unk')
         source = f"skm:{r['reaction_id']}"
         if key in edges:
@@ -265,7 +284,6 @@ def pss_edges(rows, wanted):
                 e['interactionSources'] += '|' + source
             set_effect(e, combined_effect(e['effect'], effect))
             continue
-        ckn_type = PSS_TYPES.get(r['reaction_type'], 'other')
         edges[key] = {
             'source': key[0], 'interaction': r['interaction'], 'target': key[1], 'directed': directed, 'rank': '0',
             'effect': effect, 'type': ckn_type, 'species': 'ath',
@@ -309,6 +327,18 @@ def opposite_signs(edges, gn_edges):
     return changed
 
 
+def mixed_types(edges, gn_edges):
+    ''' Reactions on a v2 edge together with a reaction of another (CKN) type, e.g. rx00569 (SnRK2 activates
+    AREB/ABF, PTM) and rx00610 (their repression): removed and added again, as one edge per type '''
+    types = {r['reaction_id']: PSS_TYPES.get(r['reaction_type'], 'other') for r in gn_edges}
+    mixed = set()
+    for e in edges:
+        rx = reactions(e)
+        if len({types.get(r) for r in rx}) > 1:
+            mixed |= rx
+    return mixed
+
+
 def source_rank(edge, edges):
     ''' The rank of an edge that has lost its PSS sources (rank 0 is PSS's): the rank its other sources have
     most often on the other edges, the best of them (e.g. 10.1093/molbev/msv058: 1, 10.1093/nar/gkp818: 3) '''
@@ -324,7 +354,7 @@ def source_rank(edge, edges):
 
 def update_pss(nodes, edges, gn_edges, gn_nodes, deprecated):
     ''' The PSS part of CKN as in the PSS gene network (see the module); returns nodes, edges and a log '''
-    log = {'renamed': Counter(), 'stripped': [], 'removed': [], 'merged': [], 'conflicts': []}
+    log = {'renamed': Counter(), 'stripped': [], 'removed': [], 'merged': Counter(), 'separate': Counter()}
 
     # 1. PSS names
     for e in edges:
@@ -347,6 +377,7 @@ def update_pss(nodes, edges, gn_edges, gn_nodes, deprecated):
     gone = {rx for rx in ckn_pairs if rx not in gn_pairs}
     changed = {rx for rx in ckn_pairs if rx in gn_pairs and not ckn_pairs[rx] <= gn_pairs[rx]}
     changed |= opposite_signs(edges, gn_edges) - gone
+    changed |= mixed_types(edges, gn_edges) - gone
     log['gone'] = {rx: 'deprecated' if rx in deprecated else 'not public Arabidopsis' for rx in sorted(gone)}
     log['changed'] = sorted(changed)
     remove = gone | changed
@@ -372,18 +403,21 @@ def update_pss(nodes, edges, gn_edges, gn_nodes, deprecated):
     index = {}
     for i, e in enumerate(edges):
         for pair in pairs(e):
-            index.setdefault(pair, i)
+            index.setdefault(pair, []).append(i)
     added = []
     for new in pss_edges(gn_edges, set(log['added_reactions'])):
-        i = index.get((new['source'], new['target']))
-        if i is None and not new['directed']:
-            i = index.get((new['target'], new['source']))
+        candidates = list(dict.fromkeys(index.get((new['source'], new['target']), []) +
+                                        index.get((new['target'], new['source']), [])))
+        i, rule = merge_target(edges, candidates, new)
+        reaction_type = new.pop('reaction_type')
         if i is None:
-            new.pop('reaction_type')
+            for j in candidates:
+                if same_direction(edges[j], new):
+                    log['separate'][(edges[j]['type'], new['type'])] += 1
             added.append(new)
             continue
-        log['merged'].append((dict(edges[i]), new['interactionSources']))
-        merge_pss_edge(edges[i], new, log)
+        log['merged'][rule] += 1
+        merge_pss_edge(edges[i], dict(new, reaction_type=reaction_type), rule)
     edges += added
     log['added'] = added
     log['no_pss_source'] = [e for e in edges if e['rank'] == '0' and not reactions(e)]
@@ -412,15 +446,15 @@ def update_pss(nodes, edges, gn_edges, gn_nodes, deprecated):
 
 
 def edge_key(edge):
-    ''' (source, target, directed); an undirected edge's nodes sorted '''
+    ''' (source, target, directed, type); an undirected edge's nodes sorted '''
     a, b = edge['source'], edge['target']
-    return (a, b, True) if edge['directed'] else (*sorted((a, b)), False)
+    return ((a, b, True) if edge['directed'] else (*sorted((a, b)), False)) + (edge['type'],)
 
 
 def check(nodes, edges, gn_edges, deprecated):
     ''' Every edge's nodes in node-annot, no deprecated reaction, the same reactions as the gene network, no
-    edge twice (two edges between the same nodes are fine if one is directed and the other not, or in opposite
-    directions: e.g. binding and transcription factor regulation) '''
+    edge twice (two edges between the same nodes are fine if their types differ, one is directed and the other
+    not, or they go in opposite directions) '''
     ids = Counter(n['id'] for n in nodes)
     assert all(c == 1 for c in ids.values()), f'nodes twice: {[i for i, c in ids.items() if c > 1][:10]}'
     missing = {x for e in edges for x in (e['source'], e['target'])} - set(ids)
@@ -446,11 +480,11 @@ def report(log):
         print(f"  {e['source']} -> {e['target']} ({e['type']}, rank {e['rank']}): -{','.join(drop)}: "
               f"{e['interactionSources']}")
     print(f"reactions added: {len(log['added_reactions'])}; edges added: {len(log['added'])}; merged into "
-          f"existing edges: {len(log['merged'])}")
-    print(f"type conflicts (CKN's kept): {len(log['conflicts'])}")
-    for old, new in log['conflicts']:
-        print(f"  {old['source']} -> {old['target']}: CKN {old['type']}/{old['effect']} (rank {old['rank']}), "
-              f"PSS {new['type']}/{new['effect']} {new['interactionSources']}")
+          f"existing edges: {sum(log['merged'].values())} ({dict(log['merged'])})")
+    print(f"PSS edges kept apart from an existing edge of another type (existing type -> PSS type): "
+          f"{sum(log['separate'].values())}")
+    for (old, new), count in log['separate'].most_common():
+        print(f"  {old} -> {new}: {count}")
     print(f"rank 0 edges left without a PSS source (ranked by their other sources): {len(log['no_pss_source'])}")
     for e in log['no_pss_source']:
         print(f"  {e['source']} -> {e['target']} ({e['type']}/{e['effect']}): rank {e['rank']}: "
