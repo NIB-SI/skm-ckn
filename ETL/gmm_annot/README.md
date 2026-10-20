@@ -4,8 +4,8 @@ Last updated: 06.10.2026
 
 ## Description
 
-MapMan4 bins of the Arabidopsis genes from GoMapMan 2 (https://gomapman2.nib.si), for CKN v2.0.1 (`mapman` node
-column, `scripts/ckn_v2.0.1.py` at the repository root) and for the PSS functional clusters (`mapman` property: the
+MapMan4 bins of the Arabidopsis genes from GoMapMan 2 (https://gomapman2.nib.si), for CKN v2.1 (`mapman` node
+column, `scripts/ckn_v2.1.py` at the repository root) and for the PSS functional clusters (`mapman` property: the
 bins of a cluster's Arabidopsis genes, see `skm-pss/pss-updates/2026.09.28-data-fixes.cypher` block 18 and
 `regular-updates.cypher`).
 
